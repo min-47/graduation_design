@@ -1,4 +1,4 @@
-# graduation_design
+# vueshop
 
 ## Project setup
 ```
