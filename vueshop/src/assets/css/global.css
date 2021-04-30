@@ -6,3 +6,9 @@ html,body,#app{
   /* 样式表的最小宽度 */
   min-width:1366px ;
 }
+/* 解决http://localhost:8080/categories
+网页中级联数据出错以及数据太高等问题 */
+ .el-cascader-menu { 
+   height: 300px;
+   width: 20px;
+    }
