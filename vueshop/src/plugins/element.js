@@ -24,7 +24,12 @@ import{Button,Form,FormItem,Input,Message,
   Tree,
   Option,
   Select,
-  Cascader
+  Cascader,
+  Alert,
+  Tabs,
+  TabPane
+ 
+  
 
 
 
@@ -63,6 +68,12 @@ Vue.use( Tree)
 Vue.use( Select)
 Vue.use( Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
+
+
+ 
 
 
 Vue.prototype.$message = Message
