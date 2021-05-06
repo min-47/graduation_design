@@ -410,7 +410,7 @@ export default {
         if(res.meta.status !==200){
             return this.$message.error('修改参数项失败')
           }
-            this.$message.success('删除参数项成功')
+            this.$message.success('添加参数项成功')
             // this.editForm = res.data
             this.getParamsData()
     },

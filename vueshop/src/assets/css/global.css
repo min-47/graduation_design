@@ -12,3 +12,10 @@ html,body,#app{
    height: 300px;
    width: 20px;
     }
+  .el-steps {
+    margin: 15px 0;
+  }
+  /* 富文本编辑器的高度 */
+  .ql-editor{
+    min-height:500px ;
+  }
