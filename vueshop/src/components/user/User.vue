@@ -7,8 +7,8 @@
       <el-breadcrumb-item>活动列表</el-breadcrumb-item>
     </el-breadcrumb>
     <!-- 卡片区 -->
-    <el-card class="box-card">
-      <!-- 搜索框 -->
+    <el-card>
+      <img src="/vueshop/src/assets/2p.jpg" alt="">
       <el-row :gutter="40">
         <el-col :span="10">
           <el-input
@@ -432,29 +432,6 @@ export default {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       
     },
     // 展示分配角色的对话框
@@ -509,5 +486,11 @@ export default {
 .el-table {
   margin-top: 20px;
   font-size: 12px;
+}
+.header_bgc{
+  height: 100px;
+  width: 100%;
+  background-image:url(/vueshop/src/assets/2p.jpg) ;
+
 }
 </style>

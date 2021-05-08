@@ -3,8 +3,7 @@
     <el-container class="home_container">
       <!-- 头部区域 -->
   <el-header>
-    <div><img src="../assets/heima.png" alt=""><span>电商设计开发系统</span></div>
-    <el-button type="info" @click ="logout">退出</el-button>
+    <div ><img src="../assets/header.jpg" alt=""><span>基于web的电商设计开发平台</span></div>
   </el-header>
       <!-- 页面主题区域 -->
   <el-container>
@@ -13,9 +12,9 @@
        <div class="toggle-botton" @click="toggleCollapse">|||</div>
      
        <el-menu
-      background-color="#333744"
+      background-color="#698B69"
       text-color="#fff"
-      active-text-color="#409EFF"
+      active-text-color="#B4EEB4"
       unique-opened
       :collapse="isCollapse"
       :collapse-transition='false' 
@@ -46,6 +45,8 @@
       </el-submenu>
       
     </el-menu>
+      <el-button type="info" @click ="logout" circle>退出</el-button>
+
     </el-aside>
     <!-- 内容区域 -->
     <el-main>
@@ -121,7 +122,8 @@ export default {
     height: 100%;
   }
   .el-header{
-    background-color: #373d41;
+    // height: 150px I !important;
+    background-color: #698B69;
     display: flex;
     justify-content:space-between;
     padding-left: 0;
@@ -133,14 +135,16 @@ export default {
       align-items: center;
       span{
         margin-left: 15px;
+        color: #fff;
       }
     }
 
   }
   .el-aside{
-    background-color: #333744;
+    background-color: #698B69;
     .el-menu{
-      border-right: none;  
+      border-right: none; 
+      background-color: #B4EEB4;
 
     }
   }
@@ -152,7 +156,7 @@ export default {
   }
 
   .toggle-botton{
-    background-color: #4A5064;
+    background-color: #218868;
     font-size: 10px;
     line-height: 24px;
     color: #fff;
@@ -160,4 +164,15 @@ export default {
     letter-spacing: 0.2em;
     
   }
+  img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background-color: #eee;
+    }
+  .el-button{
+     margin: 15px;
+     background-color: #218868;
+  }
+
 </style>

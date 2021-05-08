@@ -3,7 +3,7 @@
     <!-- 头像区域 -->
     <div class="login_box">
       <div class="avatar_box">
-        <img src="../assets/logo.png" alt="" />
+        <img src="../assets/header.jpg" alt="" />
       </div>
         
     <!-- 表单区域 -->
@@ -36,8 +36,8 @@ export default {
        
           // 这是登录表单的数据绑定对象
           loginForm:{
-            username:'min',
-            password:'123',
+            username:'admin',
+            password:'123456',
           },
           // 这是表单验证规则对象
           loginFormRules:{
@@ -114,12 +114,13 @@ export default {
 .login_container {
   background-color: #2b4b6b;
   height: 100%;
+  background-image:url(../assets/bgc.jpg) ;
 }
 
 .login_box {
   width: 450px;
   height: 300px;
-  background-color: #fff;
+  background-color:#218868;
   border-radius: 3px;
   position: absolute;
   left: 50%;
@@ -137,6 +138,8 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    
+
 
     img {
       height: 100%;
