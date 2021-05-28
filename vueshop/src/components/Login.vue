@@ -1,5 +1,11 @@
 <template>
+
   <div class="login_container">
+
+ 
+        <h3>欢迎使用该电商平台</h3>
+     
+    
     <!-- 头像区域 -->
     <div class="login_box">
       <div class="avatar_box">
@@ -163,4 +169,13 @@ export default {
   justify-content: flex-end;
 
 }
+
+h3{
+  color: #5F9EA0;
+  // text-align: center;
+  font-size: 50px;
+   
+  
+}
+ 
 </style>

@@ -2,13 +2,13 @@
    
     <el-container class="home_container">
       <!-- 头部区域 -->
-  <el-header>
-    <div ><img src="../assets/header.jpg" alt=""><span>基于web的电商设计开发平台</span></div>
+  <el-header height="100px">
+    <div ><img src="../assets/header1.jpg" alt=""><span>基于web的电商设计开发平台</span></div>
   </el-header>
       <!-- 页面主题区域 -->
   <el-container>
     <!-- 侧边栏区域 -->
-    <el-aside :width="isCollapse ? '64px':'200px'">
+    <el-aside width="100px">
        <div class="toggle-botton" @click="toggleCollapse">|||</div>
      
        <el-menu
@@ -45,7 +45,9 @@
       </el-submenu>
       
     </el-menu>
+      <el-button type="info"   circle><router-link to='/welcome'>首页</router-link></el-button>
       <el-button type="info" @click ="logout" circle>退出</el-button>
+ 
 
     </el-aside>
     <!-- 内容区域 -->
@@ -122,20 +124,22 @@ export default {
     height: 100%;
   }
   .el-header{
-    // height: 150px I !important;
+    overflow: hidden;
     background-color: #698B69;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     padding-left: 0;
     align-items: center;
     color: #fff;
     font-size: 20px;
     >div{
+      height: 100px;
       display: flex;
       align-items: center;
       span{
         margin-left: 15px;
         color: #fff;
+        font-size: 50px;
       }
     }
 
@@ -173,6 +177,9 @@ export default {
   .el-button{
      margin: 15px;
      background-color: #218868;
+  }
+  .el-submenu{
+    display: none;
   }
 
 </style>

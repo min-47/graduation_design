@@ -62,7 +62,8 @@
           <el-table-column type="index" label="#"></el-table-column>
           <el-table-column label="角色名称" prop="roleName"></el-table-column>
           <el-table-column label="角色描述" prop="roleDesc"></el-table-column>
-          <el-table-column label="操作" width="300px">
+          <el-table-column label="操作" width="400px">
+
             <template slot-scope="scope" >
               <div>
                 <el-button size="mini" type="primary" icon="el-icon-search">搜索</el-button>
@@ -71,6 +72,7 @@
                 @click="showSetRightDilog(scope.row)"
                 >分配权限</el-button>
               </div>
+
             </template>
 
           </el-table-column>
@@ -233,6 +235,7 @@ export default {
 .el-card {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
 }
+ 
 .el-table {
   margin-top: 20px;
   font-size: 12px;

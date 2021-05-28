@@ -146,9 +146,9 @@ export default {
         const{data:res} = await this.$http.delete(`goods/${goods_id}`)
         console.log("删除的信息"+res.data);
         if(res.meta.status !==200){
-            return this.$message.error('删除参数信息失败')
+            return this.$message.error('删除商品失败')
           }
-            this.$message.success('删除参数信息成功')
+            this.$message.success('删除商品成功')
             // this.editForm = res.data
             this.getGoodsList()
 

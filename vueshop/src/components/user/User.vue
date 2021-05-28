@@ -4,7 +4,7 @@
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>用户管理</el-breadcrumb-item>
-      <el-breadcrumb-item>活动列表</el-breadcrumb-item>
+      <el-breadcrumb-item>分配角色</el-breadcrumb-item>
     </el-breadcrumb>
     <!-- 卡片区 -->
     <el-card>
@@ -47,7 +47,7 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="180px">
+        <el-table-column label="操作" width="200px">
           <template slot-scope="scope">
             <!-- 修改按钮 -->
             <el-button
@@ -97,7 +97,7 @@
     </el-card>
     <!-- 添加用户的对话框 -->
     <el-dialog
-      title="提示"
+      title="添加用户"
       :visible.sync="addDialogVisible"
       width="50%"
       @close="addDialogClosed"
